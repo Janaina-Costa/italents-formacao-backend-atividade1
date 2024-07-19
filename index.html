@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <noscript><h1>Java Script está desativado</h1></noscript>
+
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="title">Cálculo de IMC</h1>
+        <form action="">
+          <div class="wrapper-input">
+            <div class="card-input">
+              <label for="input-weight">Informe seu peso(kg)</label>
+              <input
+                type="number"
+                id="input-weight"
+                id="weight"
+                max="480"
+                min="35"
+                placeholder="Ex: 70"
+              />
+            </div>
+            <div class="card-input">
+              <label for="input-height">Informe sua altura(cm)</label>
+              <input
+                type="number"
+                id="input-height"
+                id="height"
+                max="240"
+                min="50"
+                placeholder="Ex: 170"
+              />
+            </div>
+          </div>
+          <button id="calc">Calcular</button>
+        </form>
+      </div>
+      <div class="modal-result">
+        <div class="wrapper-result">
+          <div class="header">
+            <h1 class="title">Resultado</h1>
+            <button id="close">X</button>
+          </div>
+          <div class="card-result">
+            <p>Seu IMC é: <span id="result">18</span></p>
+            <p id="classification"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
